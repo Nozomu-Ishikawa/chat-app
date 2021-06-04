@@ -1,6 +1,6 @@
 <div class="user-header">
   <div class="user-name"> <%# ユーザーの名前仮作成　%>
-    <a href="#">Tom</a>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="create-rooms"> <%# チャット作成ボタン仮作成　%>
     <a href="#">チャットを作成する</a>
